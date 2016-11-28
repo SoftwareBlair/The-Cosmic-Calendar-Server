@@ -1,1 +1,1 @@
-# Server side code for The Cosmic Calendar
+# The Cosmic Calendar - Server
