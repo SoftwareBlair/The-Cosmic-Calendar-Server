@@ -85,7 +85,7 @@ exports.seed = function(knex, Promise) {
         knex('events').insert({
           title: 'Formation of Earth',
           description: 'The oldest material found in the Solar System is dated to 4.5672±0.0006 billion years ago',
-          img_url: 'http://i.imgur.com/7rkacAQ.gif',
+          img_url: 'http://pop.h-cdn.co/assets/15/44/980x551/gallery-1446048052-bennu-3-1024.gif',
           source_url: 'https://en.wikipedia.org/wiki/Earth',
           cosmic_year: 4.56,
           year_abrv: 'bya',
@@ -140,7 +140,7 @@ exports.seed = function(knex, Promise) {
         knex('events').insert({
           title: 'First Complexe Cells on Earth',
           description: 'A eukaryote is any organism whose cells contain a nucleus and other organelles enclosed within membranes.',
-          img_url: 'http://web.harran.edu.tr/assets/uploads/other/images/giphy_(7).gif',
+          img_url: 'http://cdn.phys.org/newman/gfx/news/hires/2009/thenobelpriz.jpg',
           source_url: 'https://en.wikipedia.org/wiki/Eukaryote',
           cosmic_year: 2.0,
           year_abrv: 'bya',
