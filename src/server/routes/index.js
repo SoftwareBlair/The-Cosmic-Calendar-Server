@@ -2,12 +2,16 @@ const express = require('express');
 const router = express.Router();
 const knex = require('../db/connection');
 
+// Setting route end points
 router.get('/', getAllData);
 router.get('/months', getAllMonths);
 router.get('/months/:id', getSingleMonth);
 router.get('/events', getAllEvents);
 router.get('/events/:id', getSingleEvent);
 
+/* Helper functions for routes */
+
+// GET all data from DB
 function getAllData (req, res, next) {
   return knex('months').select().orderBy('id')
   .then((months) => {
@@ -27,6 +31,7 @@ function getAllData (req, res, next) {
   });
 }
 
+// GET all months
 function getAllMonths (req, res, next) {
   return knex('months').select().orderBy('id')
   .then((months) => {
@@ -42,12 +47,14 @@ function getAllMonths (req, res, next) {
   });
 }
 
+// GET single month
 function getSingleMonth (req, res, next) {
-  return knex('months').select().orderBy('id')
-  .then((months) => {
+  const monthID = parseInt(req.params.id);
+  return knex('months').where('id', monthID).first()
+  .then((month) => {
     res.status(200).json({
       status: 'SUCCESS',
-      data: months
+      data: month
     });
   })
   .catch(err => {
@@ -57,6 +64,7 @@ function getSingleMonth (req, res, next) {
   });
 }
 
+// GET all events
 function getAllEvents (req, res, next) {
   return knex('events').select().orderByRaw('month_id ASC, day ASC, time ASC')
   .then((events) => {
@@ -72,6 +80,7 @@ function getAllEvents (req, res, next) {
   });
 }
 
+// GET single month
 function getSingleEvent (req, res, next) {
   const eventID = parseInt(req.params.id);
   return knex('events').where('id', eventID).first()
