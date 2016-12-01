@@ -11,51 +11,65 @@ router.get('/events/:id', getSingleEvent);
 function getAllData (req, res, next) {
   return knex('months').select().orderBy('id')
   .then((months) => {
-    knex('events').select().orderByRaw('day ASC, time ASC, time ASC')
+    knex('events').select().orderByRaw('month_id ASC, day ASC, time ASC')
     .then((events) => {
       res.status(200).json({
-        status: 'Success',
-        data: {
-          months: months,
-          events: events
-        }
+        status: 'SUCCESS',
+        months: months,
+        events: events
       });
     });
   })
-  .catch(err => next(err));
+  .catch(err => {
+    res.status(400).json({
+      message: 'Request Could Not Be Completed'
+    });
+  });
 }
 
 function getAllMonths (req, res, next) {
   return knex('months').select().orderBy('id')
   .then((months) => {
-   res.status(200).json({
-     status: 'success',
-     data: months
-   });
+    res.status(200).json({
+      status: 'SUCCESS',
+      data: months
+    });
   })
-  .catch(err => next(err));
+  .catch(err => {
+    res.status(400).json({
+      message: 'Request Could Not Be Completed'
+    });
+  });
 }
 
 function getSingleMonth (req, res, next) {
   return knex('months').select().orderBy('id')
   .then((months) => {
-   res.status(200).json({
-     status: 'success',
-     data: months
-   });
+    res.status(200).json({
+      status: 'SUCCESS',
+      data: months
+    });
   })
-  .catch(err => next(err));
+  .catch(err => {
+    res.status(400).json({
+      message: 'Request Could Not Be Completed'
+    });
+  });
 }
 
 function getAllEvents (req, res, next) {
   return knex('events').select().orderByRaw('month_id ASC, day ASC, time ASC')
   .then((events) => {
     res.status(200).json({
-      status: 'success',
+      status: 'SUCCESS',
       data: events
     });
   })
-  .catch(err => next(err));
+  .catch(err => {
+    res.status(400).json({
+      message: 'Request Could Not Be Completed'
+    });
+  });
 }
 
 function getSingleEvent (req, res, next) {
@@ -63,11 +77,15 @@ function getSingleEvent (req, res, next) {
   return knex('events').where('id', eventID).first()
   .then((event) => {
     res.status(200).json({
-      status: 'success',
+      status: 'SUCCESS',
       data: event
     });
   })
-  .catch(err => next(err));
+  .catch(err => {
+    res.status(400).json({
+      message: 'Request Could Not Be Completed'
+    });
+  });
 }
 
 module.exports = router;
