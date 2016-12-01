@@ -13,15 +13,13 @@ router.get('/events/:id', getSingleEvent);
 
 // GET all data from DB
 function getAllData (req, res, next) {
-  return knex('months').select().orderBy('id')
-  .then((months) => {
-    knex('events').select().orderByRaw('month_id ASC, day ASC, time ASC')
-    .then((events) => {
-      res.status(200).json({
-        status: 'All Data Returned',
-        months: months,
-        events: events
-      });
+  return knex('months')
+  .join('events', 'months.id', 'events.month_id')
+  .orderByRaw('events.month_id ASC, events.day ASC, events.time ASC ')
+  .then((allData) => {
+    res.status(200).json({
+      status: 'All Data Returned',
+      data: allData
     });
   })
   .catch(err => {
@@ -33,7 +31,7 @@ function getAllData (req, res, next) {
 
 // GET all months
 function getAllMonths (req, res, next) {
-  return knex('months').select().orderBy('id')
+  return knex('months').orderBy('id')
   .then((months) => {
     res.status(200).json({
       status: 'All Months Returned',
@@ -50,7 +48,7 @@ function getAllMonths (req, res, next) {
 // GET single month
 function getSingleMonth (req, res, next) {
   const monthID = parseInt(req.params.id);
-  return knex('months').where('id', monthID).first()
+  return knex('months').where('id', monthID)
   .then((month) => {
     res.status(200).json({
       status: 'Single Month Returned',
@@ -66,7 +64,7 @@ function getSingleMonth (req, res, next) {
 
 // GET all events
 function getAllEvents (req, res, next) {
-  return knex('events').select().orderByRaw('month_id ASC, day ASC, time ASC')
+  return knex('events').orderByRaw('month_id ASC, day ASC, time ASC')
   .then((events) => {
     res.status(200).json({
       status: 'All Events Returned',
@@ -83,7 +81,7 @@ function getAllEvents (req, res, next) {
 // GET single month
 function getSingleEvent (req, res, next) {
   const eventID = parseInt(req.params.id);
-  return knex('events').where('id', eventID).first()
+  return knex('events').where('id', eventID)
   .then((event) => {
     res.status(200).json({
       status: 'Single Event Returned',
