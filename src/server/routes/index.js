@@ -18,7 +18,7 @@ function getAllData (req, res, next) {
     knex('events').select().orderByRaw('month_id ASC, day ASC, time ASC')
     .then((events) => {
       res.status(200).json({
-        status: 'SUCCESS',
+        status: 'All Data Returned',
         months: months,
         events: events
       });
@@ -36,7 +36,7 @@ function getAllMonths (req, res, next) {
   return knex('months').select().orderBy('id')
   .then((months) => {
     res.status(200).json({
-      status: 'SUCCESS',
+      status: 'All Months Returned',
       data: months
     });
   })
@@ -53,7 +53,7 @@ function getSingleMonth (req, res, next) {
   return knex('months').where('id', monthID).first()
   .then((month) => {
     res.status(200).json({
-      status: 'SUCCESS',
+      status: 'Single Month Returned',
       data: month
     });
   })
@@ -69,7 +69,7 @@ function getAllEvents (req, res, next) {
   return knex('events').select().orderByRaw('month_id ASC, day ASC, time ASC')
   .then((events) => {
     res.status(200).json({
-      status: 'SUCCESS',
+      status: 'All Events Returned',
       data: events
     });
   })
@@ -86,7 +86,7 @@ function getSingleEvent (req, res, next) {
   return knex('events').where('id', eventID).first()
   .then((event) => {
     res.status(200).json({
-      status: 'SUCCESS',
+      status: 'Single Event Returned',
       data: event
     });
   })
