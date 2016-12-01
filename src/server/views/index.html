@@ -5,8 +5,201 @@
 {% block content %}
 
   <div class="container">
-    <h1>{{title}}</h1>
-    <h2>The sum is {{sum}}</h2>
+    {% for month in months %}
+
+      {% if month.month === 'January' %}
+        <h3>{{ month.month }}</h3>
+        <ol>
+          {% for event in events %}
+            {% if event.month_id === month.id %}
+            <li>
+              <h4>{{ event.title }}: {{ month.month }} {{ event.day }}</h4>
+              <ul>
+                <li>{{ event.description }}</li>
+              </ul>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      {% endif %}
+
+      {% if month.month === 'February' %}
+        <h3>{{ month.month }}</h3>
+        <ol>
+          {% for event in events %}
+            {% if event.month_id === month.id %}
+            <li>
+              <h4>{{ event.title }}: {{ month.month }} {{ event.day }}</h4>
+              <ul>
+                <li>{{ event.description }}</li>
+              </ul>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      {% endif %}
+
+      {% if month.month === 'March' %}
+        <h3>{{ month.month }}</h3>
+        <ol>
+          {% for event in events %}
+            {% if event.month_id === month.id %}
+            <li>
+              <h4>{{ event.title }}: {{ month.month }} {{ event.day }}</h4>
+              <ul>
+                <li>{{ event.description }}</li>
+              </ul>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      {% endif %}
+
+      {% if month.month === 'April' %}
+        <h3>{{ month.month }}</h3>
+        <ol>
+          {% for event in events %}
+            {% if event.month_id === month.id %}
+            <li>
+              <h4>{{ event.title }}: {{ month.month }} {{ event.day }}</h4>
+              <ul>
+                <li>{{ event.description }}</li>
+              </ul>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      {% endif %}
+
+      {% if month.month === 'May' %}
+        <h3>{{ month.month }}</h3>
+        <ol>
+          {% for event in events %}
+            {% if event.month_id === month.id %}
+            <li>
+              <h4>{{ event.title }}: {{ month.month }} {{ event.day }}</h4>
+              <ul>
+                <li>{{ event.description }}</li>
+              </ul>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      {% endif %}
+
+      {% if month.month === 'June' %}
+        <h3>{{ month.month }}</h3>
+        <ol>
+          {% for event in events %}
+            {% if event.month_id === month.id %}
+            <li>
+              <h4>{{ event.title }}: {{ month.month }} {{ event.day }}</h4>
+              <ul>
+                <li>{{ event.description }}</li>
+              </ul>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      {% endif %}
+
+      {% if month.month === 'July' %}
+        <h3>{{ month.month }}</h3>
+        <ol>
+          {% for event in events %}
+            {% if event.month_id === month.id %}
+            <li>
+              <h4>{{ event.title }}: {{ month.month }} {{ event.day }}</h4>
+              <ul>
+                <li>{{ event.description }}</li>
+              </ul>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      {% endif %}
+
+      {% if month.month === 'August' %}
+        <h3>{{ month.month }}</h3>
+        <ol>
+          {% for event in events %}
+            {% if event.month_id === month.id %}
+            <li>
+              <h4>{{ event.title }}: {{ month.month }} {{ event.day }}</h4>
+              <ul>
+                <li>{{ event.description }}</li>
+              </ul>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      {% endif %}
+
+      {% if month.month === 'September' %}
+        <h3>{{ month.month }}</h3>
+        <ol>
+          {% for event in events %}
+            {% if event.month_id === month.id %}
+            <li>
+              <h4>{{ event.title }}: {{ month.month }} {{ event.day }}</h4>
+              <ul>
+                <li>{{ event.description }}</li>
+              </ul>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      {% endif %}
+
+      {% if month.month === 'October' %}
+        <h3>{{ month.month }}</h3>
+        <ol>
+          {% for event in events %}
+            {% if event.month_id === month.id %}
+            <li>
+              <h4>{{ event.title }}: {{ month.month }} {{ event.day }}</h4>
+              <ul>
+                <li>{{ event.description }}</li>
+              </ul>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      {% endif %}
+
+      {% if month.month === 'November' %}
+        <h3>{{ month.month }}</h3>
+        <ol>
+          {% for event in events %}
+            {% if event.month_id === month.id %}
+            <li>
+              <h4>{{ event.title }}: {{ month.month }} {{ event.day }}</h4>
+              <ul>
+                <li>{{ event.description }}</li>
+              </ul>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      {% endif %}
+
+      {% if month.month === 'December' %}
+        <h3>{{ month.month }}</h3>
+        <ol>
+          {% for event in events %}
+            {% if event.month_id === month.id %}
+            <li>
+              <h4>{{ event.title }}: {{ month.month }} {{ event.day }} {{ event.time }}</h4>
+              <ul>
+                <li>{{ event.description }}</li>
+              </ul>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      {% endif %}
+
+    {% endfor %}
   </div>
 
 {% endblock %}

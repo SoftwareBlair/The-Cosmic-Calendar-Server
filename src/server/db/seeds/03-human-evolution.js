@@ -12,8 +12,8 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Primate#Evolutionary_history',
           cosmic_year: 65.0,
           year_abrv: 'mya',
-          date: 'December 30',
-          time: '',
+          day: 30,
+          time: '06:25:00',
           month_id: 12
         }),
         knex('events').insert({
@@ -23,7 +23,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Ape',
           cosmic_year: 15.0,
           year_abrv: 'mya',
-          date: 'December 31',
+          day: 31,
           time: '06:05:00',
           month_id: 12
         }),
@@ -34,7 +34,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Hominidae',
           cosmic_year: 12.3,
           year_abrv: 'mya',
-          date: 'December 31',
+          day: 31,
           time: '14:24:00',
           month_id: 12
         }),
@@ -45,7 +45,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Homo',
           cosmic_year: 2.5,
           year_abrv: 'mya',
-          date: 'December 31',
+          day: 31,
           time: '22:24:00',
           month_id: 12
         }),
@@ -56,7 +56,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Control_of_fire_by_early_humans',
           cosmic_year: 0.4,
           year_abrv: 'mya',
-          date: 'December 31',
+          day: 31,
           time: '23:44:00',
           month_id: 12
         }),
@@ -67,7 +67,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Anatomically_modern_human',
           cosmic_year: 0.2,
           year_abrv: 'mya',
-          date: 'December 31',
+          day: 31,
           time: '23:52:00',
           month_id: 12
         }),
@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Last_glacial_period',
           cosmic_year: 0.11,
           year_abrv: 'mya',
-          date: 'December 31',
+          day: 31,
           time: '23:55:00',
           month_id: 12
         }),
@@ -89,7 +89,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Prehistoric_art',
           cosmic_year: 0.035,
           year_abrv: 'mya',
-          date: 'December 31',
+          day: 31,
           time: '23:58:00',
           month_id: 12
         }),
@@ -100,7 +100,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Neolithic_Revolution',
           cosmic_year: 0.012,
           year_abrv: 'mya',
-          date: 'December 31',
+          day: 31,
           time: '23:59:32',
           month_id: 12
         })

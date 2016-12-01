@@ -12,7 +12,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Big_Bang',
           cosmic_year: 13.75,
           year_abrv: 'bya',
-          date: 'January 1',
+          day: 1,
           time: '',
           month_id: 1
         }),
@@ -23,7 +23,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/GRB_090423',
           cosmic_year: 13.10,
           year_abrv: 'bya',
-          date: 'January 14',
+          day: 14,
           time: '',
           month_id: 1
         }),
@@ -34,7 +34,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Galaxy_formation_and_evolution',
           cosmic_year: 12.85,
           year_abrv: 'bya',
-          date: 'January 22',
+          day: 22,
           time: '',
           month_id: 1
         }),
@@ -45,7 +45,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Milky_Way',
           cosmic_year: 11.00,
           year_abrv: 'bya',
-          date: 'March 16',
+          day: 16,
           time: '',
           month_id: 3
         }),
@@ -56,7 +56,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Thin_disk',
           cosmic_year: 8.80,
           year_abrv: 'bya',
-          date: 'May 12',
+          day: 12,
           time: '',
           month_id: 5
         }),
@@ -67,7 +67,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Sun',
           cosmic_year: 4.6,
           year_abrv: 'bya',
-          date: 'August 31',
+          day: 31,
           time: '',
           month_id: 8
         }),
@@ -78,29 +78,29 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Formation_and_evolution_of_the_Solar_System',
           cosmic_year: 4.57,
           year_abrv: 'bya',
-          date: 'September 1',
+          day: 1,
           time: '',
           month_id: 9
         }),
         knex('events').insert({
           title: 'Formation of Earth',
-          description: 'The oldest material found in the Solar System is dated to 4.5672±0.0006 billion years ago',
+          description: 'The oldest material found in the Solar System is monthd to 4.5672±0.0006 billion years ago',
           img_url: 'http://pop.h-cdn.co/assets/15/44/980x551/gallery-1446048052-bennu-3-1024.gif',
           source_url: 'https://en.wikipedia.org/wiki/Earth',
           cosmic_year: 4.56,
           year_abrv: 'bya',
-          date: 'September 6',
+          day: 6,
           time: '',
           month_id: 9
         }),
         knex('events').insert({
           title: 'Oldest Know Rocks on Earth',
-          description: 'The oldest dated rocks on Earth, as an aggregate of minerals that have not been subsequently broken down by erosion or melted, are more than 4 billion years old, formed during the Hadean Eon of Earth\'s geological history.',
+          description: 'The oldest monthd rocks on Earth, as an aggregate of minerals that have not been subsequently broken down by erosion or melted, are more than 4 billion years old, formed during the Hadean Eon of Earth\'s geological history.',
           img_url: 'https://upload.wikimedia.org/wikipedia/commons/f/f9/4%2C030%2C000%2C000_Years_Acasta_Gneiss.jpg',
-          source_url: 'https://en.wikipedia.org/wiki/Oldest_dated_rocks',
+          source_url: 'https://en.wikipedia.org/wiki/Oldest_monthd_rocks',
           cosmic_year: 4.0,
           year_abrv: 'bya',
-          date: 'September 16',
+          day: 16,
           time: '',
           month_id: 9
         }),
@@ -111,7 +111,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Life#Origin',
           cosmic_year: 3.8,
           year_abrv: 'bya',
-          date: 'September 21',
+          day: 21,
           time: '',
           month_id: 9
         }),
@@ -122,7 +122,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Photosynthesis#Evolution',
           cosmic_year: 3.0,
           year_abrv: 'bya',
-          date: 'October 12',
+          day: 12,
           time: '',
           month_id: 10
         }),
@@ -133,7 +133,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Great_Oxygenation_Event',
           cosmic_year: 2.4,
           year_abrv: 'bya',
-          date: 'October 29',
+          day: 29,
           time: '',
           month_id: 10
         }),
@@ -144,7 +144,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Eukaryote',
           cosmic_year: 2.0,
           year_abrv: 'bya',
-          date: 'November 9',
+          day: 9,
           time: '',
           month_id: 11
         })

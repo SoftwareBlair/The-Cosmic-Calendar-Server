@@ -7,73 +7,73 @@ exports.seed = function(knex, Promise) {
         // Inserts seed entries
         knex('months').insert({
           id: 1,
-          name: 'January',
+          month: 'January',
           num_days: 31,
           num_events: 3
         }),
         knex('months').insert({
           id: 2,
-          name: 'February',
+          month: 'February',
           num_days: 28,
           num_events: 0
         }),
         knex('months').insert({
           id: 3,
-          name: 'March',
+          month: 'March',
           num_days: 31,
           num_events: 1
         }),
         knex('months').insert({
           id: 4,
-          name: 'April',
+          month: 'April',
           num_days: 30,
           num_events: 0
         }),
         knex('months').insert({
           id: 5,
-          name: 'May',
+          month: 'May',
           num_days: 31,
           num_events: 1
         }),
         knex('months').insert({
           id: 6,
-          name: 'June',
+          month: 'June',
           num_days: 30,
           num_events: 0
         }),
         knex('months').insert({
           id: 7,
-          name: 'July',
+          month: 'July',
           num_days: 31,
           num_events: 0
         }),
         knex('months').insert({
           id: 8,
-          name: 'August',
+          month: 'August',
           num_days: 31,
           num_events: 1
         }),
         knex('months').insert({
           id: 9,
-          name: 'September',
+          month: 'September',
           num_days: 30,
           num_events: 4
         }),
         knex('months').insert({
           id: 10,
-          name: 'October',
+          month: 'October',
           num_days: 31,
           num_events: 2
         }),
         knex('months').insert({
           id: 11,
-          name: 'November',
+          month: 'November',
           num_days: 30,
           num_events: 1
         }),
         knex('months').insert({
           id: 12,
-          name: 'December',
+          month: 'December',
           num_days: 31,
           num_events: 36
         })

@@ -8,7 +8,7 @@ exports.up = function(knex, Promise) {
     t.string('source_url').notNullable().defaultTo('');
     t.float('cosmic_year').notNullable();
     t.string('year_abrv').notNullable();
-    t.string('date', 60).notNullable();
+    t.integer('day').notNullable();
     t.string('time').notNullable().defaultTo('00:00:00');
     t.integer('month_id').notNullable().references('id').inTable('months');
   });

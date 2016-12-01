@@ -12,7 +12,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'http://rstb.royalsocietypublishing.org/content/370/1684/20150036',
           cosmic_year: 0.8,
           year_abrv: 'bya',
-          date: 'December 5',
+          day: 5,
           time: '',
           month_id: 12
         }),
@@ -23,7 +23,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Animal#Origin_and_fossil_record',
           cosmic_year: 0.67,
           year_abrv: 'bya',
-          date: 'December 7',
+          day: 7,
           time: '',
           month_id: 12
         }),
@@ -34,7 +34,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Arthropod',
           cosmic_year: 0.55,
           year_abrv: 'bya',
-          date: 'December 14',
+          day: 14,
           time: '',
           month_id: 12
         }),
@@ -45,7 +45,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Lists_of_prehistoric_fish',
           cosmic_year: 0.5,
           year_abrv: 'bya',
-          date: 'December 17',
+          day: 17,
           time: '',
           month_id: 12
         }),
@@ -56,7 +56,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'http://www.fossilhunters.xyz/prehistoric-earth/the-origin-and-evolution-of-land-plants.html',
           cosmic_year: 0.45,
           year_abrv: 'bya',
-          date: 'December 20',
+          day: 20,
           time: '',
           month_id: 12
         }),
@@ -67,7 +67,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'http://listverse.com/2013/01/14/10-prehistoric-bugs-that-could-seriously-mess-you-up/',
           cosmic_year: 0.4,
           year_abrv: 'bya',
-          date: 'December 21',
+          day: 21,
           time: '',
           month_id: 12
         }),
@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Amphibian#Evolutionary_history',
           cosmic_year: 0.36,
           year_abrv: 'bya',
-          date: 'December 22',
+          day: 22,
           time: '',
           month_id: 12
         }),
@@ -89,7 +89,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Reptile#Evolutionary_history',
           cosmic_year: 0.3,
           year_abrv: 'bya',
-          date: 'December 23',
+          day: 23,
           time: '',
           month_id: 12
         }),
@@ -100,7 +100,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Permian%E2%80%93Triassic_extinction_event',
           cosmic_year: 0.25,
           year_abrv: 'bya',
-          date: 'December 24',
+          day: 24,
           time: '',
           month_id: 12
         }),
@@ -111,7 +111,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Dinosaur',
           cosmic_year: 0.23,
           year_abrv: 'bya',
-          date: 'December 25',
+          day: 25,
           time: '',
           month_id: 12
         }),
@@ -122,7 +122,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Mammal#Taxonomy_and_phylogeny',
           cosmic_year: 0.2,
           year_abrv: 'bya',
-          date: 'December 26',
+          day: 26,
           time: '',
           month_id: 12
         }),
@@ -133,7 +133,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Origin_of_birds',
           cosmic_year: 0.15,
           year_abrv: 'bya',
-          date: 'December 27',
+          day: 27,
           time: '',
           month_id: 12
         }),
@@ -144,7 +144,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Evolutionary_history_of_plants#Flowers',
           cosmic_year: 0.13,
           year_abrv: 'bya',
-          date: 'December 28',
+          day: 28,
           time: '',
           month_id: 12
         }),
@@ -155,7 +155,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event',
           cosmic_year: 0.065,
           year_abrv: 'bya',
-          date: 'December 30',
+          day: 30,
           time: '06:24:00',
           month_id: 12
         })

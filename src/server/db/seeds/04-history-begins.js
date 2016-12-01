@@ -12,7 +12,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Holocene_glacial_retreat',
           cosmic_year: 12.0,
           year_abrv: 'kya',
-          date: 'December 31',
+          day: 31,
           time: '23:59:33',
           month_id: 12
         }),
@@ -23,7 +23,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Chalcolithic',
           cosmic_year: 6.0,
           year_abrv: 'kya',
-          date: 'December 31',
+          day: 31,
           time: '23:59:46',
           month_id: 12
         }),
@@ -34,7 +34,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Bronze_Age#Age_sub-divisions',
           cosmic_year: 5.5,
           year_abrv: 'kya',
-          date: 'December 31',
+          day: 31,
           time: '23:59:47',
           month_id: 12
         }),
@@ -45,7 +45,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/First_Dynasty_of_Egypt',
           cosmic_year: 5.0,
           year_abrv: 'kya',
-          date: 'December 31',
+          day: 31,
           time: '23:59:48',
           month_id: 12
         }),
@@ -56,7 +56,7 @@ exports.seed = function(knex, Promise) {
           source_url: '',
           cosmic_year: 4.5,
           year_abrv: 'kya',
-          date: 'December 31',
+          day: 31,
           time: '23:59:49',
           month_id: 12
         }),
@@ -67,7 +67,7 @@ exports.seed = function(knex, Promise) {
           source_url: '',
           cosmic_year: 5.0,
           year_abrv: 'kya',
-          date: 'December 31',
+          day: 31,
           time: '23:59:51',
           month_id: 12
         }),
@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
           source_url: '',
           cosmic_year: 3.5,
           year_abrv: 'kya',
-          date: 'December 31',
+          day: 31,
           time: '23:59:52',
           month_id: 12
         }),
@@ -89,7 +89,7 @@ exports.seed = function(knex, Promise) {
           source_url: '',
           cosmic_year: 3.0,
           year_abrv: 'kya',
-          date: 'December 31',
+          day: 31,
           time: '23:59:53',
           month_id: 12
         }),
@@ -100,7 +100,7 @@ exports.seed = function(knex, Promise) {
           source_url: '',
           cosmic_year: 2.5,
           year_abrv: 'kya',
-          date: 'December 31',
+          day: 31,
           time: '23:59:54',
           month_id: 12
         }),
@@ -111,7 +111,7 @@ exports.seed = function(knex, Promise) {
           source_url: '',
           cosmic_year: 2.0,
           year_abrv: 'kya',
-          date: 'December 31',
+          day: 31,
           time: '23:59:55',
           month_id: 12
         }),
@@ -122,7 +122,7 @@ exports.seed = function(knex, Promise) {
           source_url: '',
           cosmic_year: 1.5,
           year_abrv: 'kya',
-          date: 'December 31',
+          day: 31,
           time: '23:59:56',
           month_id: 12
         }),
@@ -133,7 +133,7 @@ exports.seed = function(knex, Promise) {
           source_url: '',
           cosmic_year: 1.0,
           year_abrv: 'kya',
-          date: 'December 31',
+          day: 31,
           time: '23:59:58',
           month_id: 12
         }),
@@ -144,7 +144,7 @@ exports.seed = function(knex, Promise) {
           source_url: 'https://en.wikipedia.org/wiki/Modern_history',
           cosmic_year: 0.5,
           year_abrv: 'kya',
-          date: 'December 31',
+          day: 31,
           time: '23:59:59',
           month_id: 12
         })
