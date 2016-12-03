@@ -5,16 +5,16 @@
 ### Endpoints Examples
 
 For All Data:
-```http https://cosmic-calendar.herokuapp.com/api/v1/```
+```https://cosmic-calendar.herokuapp.com/api/v1/```
 
 For All Months:
-```http https://cosmic-calendar.herokuapp.com/api/v1/months```
+```https://cosmic-calendar.herokuapp.com/api/v1/months```
 
 For Single Month:
-```http https://cosmic-calendar.herokuapp.com/api/v1/months/1```
+```https://cosmic-calendar.herokuapp.com/api/v1/months/1```
 
 For All Events:
-```http https://cosmic-calendar.herokuapp.com/api/v1/events```
+```https://cosmic-calendar.herokuapp.com/api/v1/events```
 
 For Single Event: ```http https://cosmic-calendar.herokuapp.com/api/v1/events/1```
 
