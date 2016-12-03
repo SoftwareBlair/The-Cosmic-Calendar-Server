@@ -2,6 +2,8 @@
 
 > An API to access the basic information about Carl Sagan's Cosmic Calendar
 
+If you would like to see the client side I built, the GitHub page is [here](https://github.com/brandonb81/The-Cosmic-Calendar-Client)
+
 ### What was used for the build
 
 - [PostgreSQL](https://www.postgresql.org/)
@@ -34,5 +36,3 @@ For All Events:
 `https://cosmic-calendar.herokuapp.com/api/v1/events`
 
 For Single Event: ` https://cosmic-calendar.herokuapp.com/api/v1/events/1`
-
-If you would like to see the client side I built, the GitHub page is [here](https://github.com/brandonb81/The-Cosmic-Calendar-Client)
