@@ -2,6 +2,22 @@
 
 > An API to access the basic information about Carl Sagan's Cosmic Calendar
 
+### Endpoints Examples
+
+For All Data:
+```http https://cosmic-calendar.herokuapp.com/api/v1/```
+
+For All Months:
+```http https://cosmic-calendar.herokuapp.com/api/v1/months```
+
+For Single Month:
+```http https://cosmic-calendar.herokuapp.com/api/v1/months/1```
+
+For All Events:
+```http https://cosmic-calendar.herokuapp.com/api/v1/events```
+
+For Single Event: ```http https://cosmic-calendar.herokuapp.com/api/v1/events/1```
+
 If you would like to see the client side I built, the GitHub page is [here](https://github.com/brandonb81/The-Cosmic-Calendar-Client)
 
 ### What was used for the build
