@@ -8,10 +8,11 @@ router.get('/months', getAllMonths);
 router.get('/months/:id', getSingleMonth);
 router.get('/events', getAllEvents);
 router.get('/events/:id', getSingleEvent);
+router.get('/events/month/:id', getMonthEvent);
 
 /* Helper functions for routes */
 
-// GET all data from DB
+// GET all data joined from DB
 function getAllData (req, res, next) {
   return knex('months')
   .join('events', 'months.id', 'events.month_id')
@@ -78,7 +79,24 @@ function getAllEvents (req, res, next) {
   });
 }
 
-// GET single month
+// GET events by month
+function getMonthEvent (req, res, next) {
+  const monthID = parseInt(req.params.id);
+  return knex('events').where('month_id', monthID)
+  .then((events) => {
+    res.status(200).json({
+      status: 'All Events Returned',
+      data: events
+    });
+  })
+  .catch(err => {
+    res.status(400).json({
+      message: 'Request Could Not Be Completed'
+    });
+  });
+}
+
+// GET single event
 function getSingleEvent (req, res, next) {
   const eventID = parseInt(req.params.id);
   return knex('events').where('id', eventID)
