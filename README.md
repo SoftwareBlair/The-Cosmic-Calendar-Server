@@ -25,14 +25,17 @@ If you would like to see the client side I built, the GitHub page is [here](http
 For All Data:
 `https://cosmic-calendar.herokuapp.com/api/v1/`
 
-
-For All Months:
+All Months:
 `https://cosmic-calendar.herokuapp.com/api/v1/months`
 
-For Single Month:
+Single Month:
 `https://cosmic-calendar.herokuapp.com/api/v1/months/1`
 
-For All Events:
+All Events:
 `https://cosmic-calendar.herokuapp.com/api/v1/events`
 
-For Single Event: ` https://cosmic-calendar.herokuapp.com/api/v1/events/1`
+Single Event:
+`https://cosmic-calendar.herokuapp.com/api/v1/events/1`
+
+For All Events in Single Month:
+`https://cosmic-calendar.herokuapp.com/api/v1/events/month/1`
